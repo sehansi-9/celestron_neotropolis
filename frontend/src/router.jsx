@@ -13,6 +13,7 @@ import UpdateAdmin from "./pages/UpadateAdmin";
 import DashboardSuccessful from "./pages/DashboardSuceesful"
 import DashboardRemoved from "./pages/DashboardRemove"
 
+
 const router = createBrowserRouter([
   {
     path: "/user",
@@ -23,7 +24,6 @@ const router = createBrowserRouter([
     path: "/admin",
     element: <Admin />,
   },
-
   
 {
   path:"/signup",
