@@ -1,11 +1,17 @@
-import express from "express";
+import express from 'express';
+import bodyParser from 'body-parser';
+import UserRoutes from './src/routes/UserRoutes';
+
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("hello world");
-});
+// Middleware to parse JSON request bodies
+app.use(bodyParser.json());
 
-const PORT = process.env.PORT || 3000;
+// Routes
+app.use('/api/users', UserRoutes);
+
+// Start server
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });
