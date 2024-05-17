@@ -1,0 +1,57 @@
+.signinContainer {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.signinContainer h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signinForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.signinForm input[type="text"],
+.signinForm input[type="password"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.signinButton {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signinButton:hover {
+    background-color: #0056b3;
+}
+
+.signinContainer p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signinContainer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signinContainer a:hover {
+    text-decoration: underline;
+}
