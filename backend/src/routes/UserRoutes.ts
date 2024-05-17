@@ -5,7 +5,7 @@ const router = express.Router();
 
 // Route for user signup
 router.post('/signup', async (req, res) => { 
-    console.log(req.body);
+    console.log('req.body');
     const { isAdmin } = req.body;
 
     try {

@@ -1,18 +1,20 @@
-import express from "express";
-import bodyParser from "body-parser";
-import UserRoutes from "./src/routes/UserRoutes";
-import "dotenv/config";
+import express, { Application, Request, Response, NextFunction } from 'express';
+import bodyParser from 'body-parser';
 
-const app = express();
+// Create Express application
+const app: Application = express();
 
-// Middleware to parse JSON request bodies
+// Middleware to parse incoming JSON requests
 app.use(bodyParser.json());
 
-// Routes
-app.use("/api/users", UserRoutes);
+// Error handling middleware
+app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
+    console.error(err.stack);
+    res.status(500).json({ error: 'Internal server error' });
+});
 
-// Start server
+// Start the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });
