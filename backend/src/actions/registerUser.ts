@@ -2,7 +2,6 @@ import { addDoc, collection } from "firebase/firestore";
 import { User } from "../models";
 import { db } from "../firebase";
 import bcrypt from "bcrypt";
-import { nanoid } from "nanoid";
 
 export async function LoginUser({
   nic,
@@ -16,7 +15,7 @@ export async function LoginUser({
   role,
 }: Omit<User, "DTPCode">): Promise<User> {
   const encryptedPassword = await bcrypt.hash(password, 10);
-  const DTPCode = nanoid();
+  const DTPCode = "123";
   const user: User = {
     nic,
     firstName,
