@@ -13,4 +13,5 @@ export type User = {
   vehicleNumber: string;
   password: string;
   role: UserRole;
+  DTPCode: string;
 };
