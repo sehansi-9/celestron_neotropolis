@@ -1,4 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import User from "./pages/Dashboard";
+import Admin from "./pages/Admin_Dashboard"
 import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
@@ -13,13 +15,16 @@ import DashboardRemoved from "./pages/DashboardRemove"
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Dashboard />,
+    path: "/user",
+    element: <User/>,
   },
+ 
   {
-    path: "/home",
-    element: <Home />,
+    path: "/admin",
+    element: <Admin />,
   },
+
+  
 {
   path:"/signup",
   element: <Signup />,
