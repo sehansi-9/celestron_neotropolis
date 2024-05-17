@@ -1,0 +1,95 @@
+.map-image {
+  width: 1236px; 
+  height: 576px;
+  margin-top: 20px; 
+}
+
+.welcome-msg {
+  margin-top: 20px; /* Adjust as needed */
+  text-align: center;
+  font-size: 30px;
+  font-family: "Booter - Zero Zero";
+  font-weight: bolder;
+}
+
+.home-container {
+  margin-left: 50px; 
+  
+    
+   
+  
+}
+
+  .user-details-container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* First column auto-sized, second takes remaining space */
+    align-items: center; /* Align items vertically */
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  
+  .user-details h2 {
+    margin-left: 300px;
+  }
+
+  .user-details ul{
+    margin-left: 200px;
+  }
+
+  ul {
+    list-style-type: none;
+      padding-left: 0; /* Remove default padding from the unordered list */
+      list-style-type: none; /* Remove default list style */
+      margin-bottom: 10px;
+    
+  }
+  .user-info {
+    display: inline-block; /* Display the divs as inline-block elements */
+    vertical-align: middle; /* Align divs vertically in the list items */
+    margin-left: 5px; }
+
+    li {
+      margin-bottom: 10px; /* Add margin between list items */
+    }
+
+    .user-info {
+      display: inline-block; /* Display the divs as inline-block elements */
+      vertical-align: top; /* Align divs to the top of the line */
+      margin-left: 5px; /* Add margin between the divs and labels */
+    }
+    
+    /* Style labels for consistency */
+    label {
+      display: inline-block; 
+      width: 150px; /* Adjust label width as needed */
+      text-align: left; /* Align label text to the right */
+      margin-right: 10px; /* Add margin between label and input */
+    }
+    
+    
+    ul {
+      padding-left: 0; 
+      list-style-type: none; 
+    }
+    
+    li {
+      margin-bottom: 10px; 
+    }
+    .payment-info-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: auto auto; 
+      gap: 10px; 
+    }
+    
+    .payment-info-item {
+      padding: 10px;
+      border: 1px solid #ccc; 
+    }
+    .background-image {
+      background-image: url('https://wallpapersmug.com/download/1920x1080/1fdcf1/gradient-purple-blue.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 20px;
+    }
